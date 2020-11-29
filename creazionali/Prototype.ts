@@ -11,19 +11,18 @@ class Zombie extends Prototype {
 }
 
 class VideogiocoBanale {
-  listaZombies: Zombie[] = [];
+  zombieModels: Zombie[] = [];
 
-  add = (zombie: Zombie): void => {
-    this.listaZombies.push(zombie);
+  addZombieModel = (zombie: Zombie): void => {
+    this.zombieModels.push(zombie);
   };
 
   getZombieByCaratteristica = (caratteristica: string | number): Zombie => {
-    for (let zombie of this.listaZombies) {
+    for (let zombie of this.zombieModels) {
       if (zombie.caratteristica == caratteristica) {
         return zombie;
       }
     }
-
     return new Zombie(colori.default, true, caratteristiche.default);
   };
 
@@ -55,9 +54,9 @@ enum colori {
 
 const vdgcbnl = new VideogiocoBanale();
 
-vdgcbnl.add(new Zombie(colori.verde, false, caratteristiche.brutto));
-vdgcbnl.add(new Zombie(colori.verdeScuro, true, caratteristiche.vomitaAcido));
-vdgcbnl.add(new Zombie(colori.marrone, true, caratteristiche.nazista));
+vdgcbnl.addZombieModel(new Zombie(colori.verde, false, caratteristiche.brutto));
+vdgcbnl.addZombieModel(new Zombie(colori.verdeScuro, true, caratteristiche.vomitaAcido));
+vdgcbnl.addZombieModel(new Zombie(colori.marrone, true, caratteristiche.nazista));
 
 const ordaVomitante = vdgcbnl.generaOrda(10, caratteristiche.vomitaAcido);
 console.log(ordaVomitante);
