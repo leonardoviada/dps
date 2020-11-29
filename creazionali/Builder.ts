@@ -13,7 +13,7 @@ abstract class BuilderDiAuto {
 }
 
 abstract class GestoreProduzione {
-  abstract avviaBuild(params: any): number;
+  abstract avviaBuild(params: Object): number;
 }
 
 class BuilderDiFerrari extends BuilderDiAuto {

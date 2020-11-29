@@ -15,6 +15,7 @@ Leonardo Viada - 2020
 - Flyweight
 - Adapter
 - Decorator
+---
 - Bridge
 - Twins
 
@@ -24,6 +25,7 @@ Leonardo Viada - 2020
 - Template
 - Null Object
 - State
+---
 - Chain of responsibility
 - Iterator
 - Mediator 
