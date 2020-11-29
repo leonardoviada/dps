@@ -5,7 +5,7 @@ Leonardo Viada - 2020
 - [x] Factory method 
 - [x] Singoletto
 - [x] Prototype
-- Builder
+- [x] Builder
 - Abstract factory
 
 ### Strutturali
