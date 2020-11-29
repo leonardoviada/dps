@@ -1,5 +1,5 @@
 class Automobile {
-  constructor(public colore: string, public potenzaKw: number, public nPorte: number, rProduzione: string, codTelaio: string) {}
+  constructor(public colore: string, public potenzaKw: number, public nPorte: number, public rProduzione: string, public codTelaio: string) {}
 }
 
 abstract class BuilderDiAuto {
@@ -45,7 +45,7 @@ class GestoreProduzioneFerrari extends GestoreProduzione {
 const builder = new BuilderDiFerrari();
 const gstrPrdzn = new GestoreProduzioneFerrari(builder);
 
-if (gstrPrdzn.avviaBuild({ rProduzione: 'Mario Rossi', codTelaio: 'FR124ZN#001' })) console.log('produzione avviata');
+if (gstrPrdzn.avviaBuild({ rProduzione: 'Mario Rossi', codTelaio: 'FR124ZN#001' })) console.log('costruzione avviata');
 
 builder.colore = 'rosso';
 builder.potenzaKw = 465;
