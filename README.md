@@ -3,8 +3,8 @@ Leonardo Viada - 2020
 
 ### Creazionali
 - [x] Factory method 
-- Singoletto
-- Prototype
+- [x] Singoletto
+- [x] Prototype
 - Builder
 - Abstract factory
 
@@ -24,7 +24,7 @@ Leonardo Viada - 2020
 - Template
 - Null Object
 - State
-- Chain of responsability
+- Chain of responsibility
 - Iterator
 - Mediator 
 - Command 
