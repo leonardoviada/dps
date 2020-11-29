@@ -2,7 +2,7 @@ abstract class Prodotto {
   protected constructor(public prezzo: number) {}
 
   abstract vendi(): void;
-};
+}
 
 abstract class Fabbrica {
   abstract produci(params: Object): Prodotto;
@@ -24,6 +24,8 @@ class FabbricaDiPanettoni extends Fabbrica {
     return new Panettone(peso, senzaCanditi, prezzo);
   };
 }
+
+/* --- */
 
 const maina = new FabbricaDiPanettoni();
 const panettone = maina.produci({ peso: 1, senzaCanditi: false, prezzo: 2.99 });
