@@ -2,7 +2,7 @@
 Leonardo Viada - 2020
 
 ### Creazionali
-- Factory method [x]
+- [x] Factory method 
 - Singoletto
 - Prototype
 - Builder
