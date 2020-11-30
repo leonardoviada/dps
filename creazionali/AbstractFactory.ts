@@ -102,11 +102,11 @@ class PlainHtmlFactory extends Factory {
 /* --- */
 
 /* lavoro solo su questa linea */
-const ftr = new PlainHtmlFactory();
+const ftr: Factory = new PlainHtmlFactory();
 
-const btn = ftr.createButton('/ilmiopath', 'Invia');
+const btn: Button = ftr.createButton('/ilmiopath', 'Invia');
 btn.click();
 
-const modal = ftr.createModal('Il Mio Titolo', 'lorem ipsum dolor');
+const modal: Modal = ftr.createModal('Il Mio Titolo', 'lorem ipsum dolor');
 modal.open();
 modal.close();
