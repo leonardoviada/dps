@@ -1,9 +1,12 @@
+type Caratteristica = string | number;
+type Colore = string | number;
+
 abstract class Prototype {
   abstract clone(): Object;
 }
 
 class Zombie extends Prototype {
-  constructor(public colore: string | number, public armato: boolean, public caratteristica: string | number) {super();}
+  constructor(public colore: Colore, public armato: boolean, public caratteristica: Caratteristica) {super();}
 
   clone(): Zombie {
     return this;
@@ -17,7 +20,7 @@ class VideogiocoBanale {
     this.zombieModels.push(zombie);
   };
 
-  getZombieByCaratteristica = (caratteristica: string | number): Zombie => {
+  getModelByCaratteristica = (caratteristica: Caratteristica): Zombie => {
     for (let zombie of this.zombieModels) {
       if (zombie.caratteristica == caratteristica) {
         return zombie;
@@ -26,12 +29,14 @@ class VideogiocoBanale {
     return new Zombie(colori.default, true, caratteristiche.default);
   };
 
-  generaOrda = (nZombies: number, caratteristica: string | number): Zombie[] => {
+  generaOrda = (nZombies: number, caratteristica: Caratteristica): Zombie[] => {
     let orda = [];
-    const target = this.getZombieByCaratteristica(caratteristica);
+    const target = this.getModelByCaratteristica(caratteristica);
+
     for (let i = 0; i < nZombies; i++) {
       orda.push(target.clone());
     }
+
     return orda;
   };
 }

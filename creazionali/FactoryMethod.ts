@@ -30,4 +30,3 @@ class FabbricaDiPanettoni extends Fabbrica {
 const maina = new FabbricaDiPanettoni();
 const panettone = maina.produci({ peso: 1, senzaCanditi: false, prezzo: 2.99 });
 panettone.vendi();
-
