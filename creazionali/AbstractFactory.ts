@@ -1,4 +1,3 @@
-1;
 type Color = string | number;
 
 enum colors {
