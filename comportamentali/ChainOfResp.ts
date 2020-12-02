@@ -1,4 +1,3 @@
-/* chain of responsibility */
 abstract class Operator {
   private successor: Operator | null;
 

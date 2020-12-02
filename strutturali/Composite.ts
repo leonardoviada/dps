@@ -40,6 +40,10 @@ class Nodo extends ComponenteAlberoso {
   }
 
 
+  /*
+  * @todo mettere a posto la generazione
+  * @body rendere il coefficienteStrano il numero totale di nodi e verificare foglie
+  */
   seed(coefficienteStrano: number): ComponenteAlberoso {
 
     /*    °     nNodi=1 */
