@@ -14,7 +14,7 @@ Leonardo Viada - 2020
 
 - [x] Composite
 - [x] Proxy
-- Facade
+- [x] Facade
 - Flyweight
 - Adapter
 - Decorator
@@ -26,15 +26,15 @@ Leonardo Viada - 2020
 
 ### Comportamentali
 
-- Observer
-- Memento
+- [x] Observer
+- [x] Memento
 - Template
 - Null Object
 - State
 
 ---
 
-- Chain of responsibility
+- [x] Chain of responsibility
 - Iterator
 - Mediator
 - Command
