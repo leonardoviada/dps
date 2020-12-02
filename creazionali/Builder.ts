@@ -61,7 +61,8 @@ if (gstrPrdznFrr.avviaBuild({
 })) console.log('costruzione avviata');
 
 /*
-* @todo: restituire istanza del builder dopo chiamata a setter
+* @todo concatenazione chiamate
+* @body restituire istanza dopo chiamata a qualsiasi setter
 */
 builder.colore = colori.rosso;
 builder.potenzaKw = 465;
