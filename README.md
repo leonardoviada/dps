@@ -13,7 +13,7 @@ Leonardo Viada - 2020
 ### Strutturali
 
 - [x] Composite
-- Proxy
+- [x] Proxy
 - Facade
 - Flyweight
 - Adapter
