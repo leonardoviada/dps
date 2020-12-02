@@ -40,14 +40,14 @@ class Nodo extends ComponenteAlberoso {
   }
 
 
-  seed(nNodi: number): ComponenteAlberoso {
+  seed(coefficienteStrano: number): ComponenteAlberoso {
 
     /*    °     nNodi=1 */
     /*   ° °    nNodi=3 */
     /* ° ° ° °  nNodi=7 */
-    if (!nNodi) return new Foglia();
+    if (!coefficienteStrano) return new Foglia();
 
-    for (let i = 0; i < nNodi; i++) {
+    for (let i = coefficienteStrano; i >= 1; i--) {
       this.add(new Nodo().seed(i - 1));
     }
     return this;
@@ -55,8 +55,6 @@ class Nodo extends ComponenteAlberoso {
 
   print(): void {
     this.children.forEach(child => {
-      console.group();
-      console.dir(this);
       child.print();
     });
   }
@@ -64,7 +62,6 @@ class Nodo extends ComponenteAlberoso {
 
 class Foglia extends ComponenteAlberoso {
   print(): void {
-    console.groupEnd();
     console.log(`[${ this.id }] foglia!`);
   }
 }
