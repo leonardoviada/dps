@@ -55,8 +55,14 @@ enum colori {
 const builder = new BuilderDiFerrari();
 const gstrPrdznFrr = new GestoreProduzioneFerrari(builder);
 
-if (gstrPrdznFrr.avviaBuild({ rProduzione: 'Mario Rossi', codTelaio: 'FR124ZN#001' })) console.log('costruzione avviata');
+if (gstrPrdznFrr.avviaBuild({
+  rProduzione: 'Mario Rossi',
+  codTelaio: 'FR124ZN#001'
+})) console.log('costruzione avviata');
 
+/*
+* @todo: restituire istanza del builder dopo chiamata a setter
+*/
 builder.colore = colori.rosso;
 builder.potenzaKw = 465;
 
