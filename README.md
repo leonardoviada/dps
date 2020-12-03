@@ -5,7 +5,7 @@ Leonardo Viada - 2020
 ### Creazionali
 
 - [x] Factory method
-- [x] Singoletto
+- [x] Singleton
 - [x] Prototype
 - [x] Builder
 - [x] Abstract factory
@@ -15,12 +15,9 @@ Leonardo Viada - 2020
 - [x] Composite
 - [x] Proxy
 - [x] Facade
-- Flyweight
-- Adapter
-- Decorator
-
----
-
+- [x] Flyweight
+- [x] Adapter
+- [x] Decorator o Wrapper
 - Bridge
 - Twins
 
@@ -31,10 +28,10 @@ Leonardo Viada - 2020
 - Template
 - Null Object
 - State
+- [x] Chain of responsibility
 
 ---
 
-- [x] Chain of responsibility
 - Iterator
 - Mediator
 - Command
