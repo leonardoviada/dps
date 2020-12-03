@@ -1,4 +1,6 @@
+// @ts-ignore
 type Caratteristica = string | number;
+// @ts-ignore
 type Colore = string | number;
 
 abstract class Prototype {
@@ -52,6 +54,7 @@ enum caratteristiche {
 
 enum colori {
   default,
+  // @ts-ignore
   verde,
   verdeScuro,
   marrone
